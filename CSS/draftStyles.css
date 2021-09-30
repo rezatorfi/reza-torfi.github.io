@@ -1,0 +1,161 @@
+body {
+	font-family: 'Share Tech Mono', monospace;
+	color: rgb(81, 79, 79);
+}
+
+nav {
+	text-transform: uppercase;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-image: linear-gradient(to bottom, #545454 0%, #000000 100%);
+}
+
+li a {
+	font-size: 1.8em;
+}
+
+.navBorder {
+	position: relative;
+}
+
+.navBorder:hover:before {
+	width: 100%;
+}
+
+.placeholder {
+	height: 100vh;
+}
+
+.background-image {
+	background-image: url(../media/stars.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 75%;
+}
+
+.titleName {
+	font-size: 3.5em;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.titleHead {
+	color: rgba(255, 255, 255, 0.75);
+	font-size: 2em;
+}
+
+.downButton a {
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgb(81, 79, 79);
+}
+
+.downButton i {
+	color: rgb(81, 79, 79);
+}
+
+.upButton {
+	visibility: hidden;
+}
+
+.showButton {
+		visibility: visible;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		transform: translate(-50%, -50%);
+		color: white;
+	}
+
+#about {
+	height: 300px;
+	text-align: center;
+}
+
+#projects {
+	height: 600px;
+	background-color: black;
+}
+
+.projectTitle {
+	text-align: center;
+	font-size: 4em;
+}
+
+#contact {
+	background-color: orange;
+	text-align: center;
+}
+
+.contactIcons {
+	overflow: hidden;
+}
+
+.contactIcon.fa {
+	font-size: 20vw;
+	display: block;
+}
+
+form {
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.titleName {
+		font-size: 5em;
+	}
+
+	.titleHead {
+		font-size: 2em;
+	}
+
+	.contactIcon.fa {
+		font-size: 9vw;
+	}
+
+	li a:hover {
+	transform: scale(1.1);
+	}
+
+	.navBorder:before {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: #9d9d9d;
+	content: "";
+	transition: width 0.4s;
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	.titleName {
+		font-size: 7em;
+	}
+	.titleHead {
+		font-size: 3.5em;
+	}
+	.contactIcon.fa {
+		font-size: 5vw;
+	}
+}
+
